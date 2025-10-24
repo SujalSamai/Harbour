@@ -1,11 +1,13 @@
-package com.harbour.portfolio_service.client;
+package com.harbour.equity_tracker_service.client;
 
-import com.harbour.portfolio_service.dto.EquityHoldingDetails;
+import com.harbour.equity_tracker_service.dto.EquityDetailsResponse;
+import lombok.RequiredArgsConstructor;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -13,11 +15,20 @@ import java.util.Map;
 import java.util.Objects;
 
 @Service
-public class ScreenerWebScrapper
+@RequiredArgsConstructor
+public class WebScraperClient
 {
-   public EquityHoldingDetails scrapDataFromScreener(String symbol, String url)
+   private final WebClient webClient;
+
+   public EquityDetailsResponse getStockData(String stockSymbol)
    {
-      EquityHoldingDetails indianStockResponse = new EquityHoldingDetails();
+      String url = "https://www.screener.in/company/" + stockSymbol +"/consolidated/";
+      return scrapDataFromScreener(stockSymbol, url);
+   }
+
+   private EquityDetailsResponse scrapDataFromScreener(String symbol, String url)
+   {
+      EquityDetailsResponse indianStockResponse = new EquityDetailsResponse();
       try {
          // Fetch the HTML document
          Document doc = Jsoup.connect(url)

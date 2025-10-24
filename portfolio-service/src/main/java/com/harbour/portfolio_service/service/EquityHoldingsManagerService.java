@@ -1,9 +1,10 @@
 package com.harbour.portfolio_service.service;
 
-import com.harbour.portfolio_service.client.ScreenerWebScrapper;
+import com.harbour.portfolio_service.client.EquityDataClient;
 import com.harbour.portfolio_service.dto.EquityHoldingDetails;
 import com.harbour.portfolio_service.dto.EquityHoldingRequest;
 import com.harbour.portfolio_service.dto.EquityHoldingResponse;
+import com.harbour.portfolio_service.dto.EquityMetricsDetails;
 import com.harbour.portfolio_service.entity.EquityHoldings;
 import com.harbour.portfolio_service.entity.UserPortfolio;
 import com.harbour.portfolio_service.exception.EquityDataNotFoundException;
@@ -23,16 +24,16 @@ public class EquityHoldingsManagerService
 {
    private final PortfolioRepository portfolioRepository;
    private final EquityHoldingsRepository equityHoldingsRepository;
-   private final ScreenerWebScrapper screenerWebScrapper;
+   private final EquityDataClient equityDataClient;
 
    @Autowired
    public EquityHoldingsManagerService(final PortfolioRepository portfolioRepository,
             final EquityHoldingsRepository equityHoldingsRepository,
-            final ScreenerWebScrapper screenerWebScrapper)
+            final EquityDataClient equityDataClient)
    {
       this.portfolioRepository = portfolioRepository;
       this.equityHoldingsRepository = equityHoldingsRepository;
-      this.screenerWebScrapper = screenerWebScrapper;
+      this.equityDataClient = equityDataClient;
    }
 
    public EquityHoldingResponse addHoldingToPortfolio(Long portfolioId, Long userId,
@@ -139,14 +140,16 @@ public class EquityHoldingsManagerService
 
    private EquityHoldingDetails mapToHoldingDetailsResponse(EquityHoldings holding)
    {
-      String url = "https://www.screener.in/company/" + holding.getStockSymbol() + "/consolidated/";
-      EquityHoldingDetails holdingDetails = screenerWebScrapper.scrapDataFromScreener(holding.getStockSymbol(), url);
+      EquityMetricsDetails equityMetricsDetails = equityDataClient.getDataFromEquityTrackerService(holding.getStockSymbol());
 
-      if (Objects.isNull(holdingDetails))
+      if (Objects.isNull(equityMetricsDetails))
       {
          throw new EquityDataNotFoundException(holding.getStockSymbol());
       }
 
-      return holdingDetails;
+      return EquityHoldingDetails.builder()
+               .equityPurchaseData(mapToHoldingResponse(holding))
+               .equityCurrentMetrics(equityMetricsDetails)
+               .build();
    }
 }

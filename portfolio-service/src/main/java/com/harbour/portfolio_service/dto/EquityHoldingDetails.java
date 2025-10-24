@@ -11,19 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class EquityHoldingDetails
 {
-   private String symbol;
-   private String companyName;
-   private String price;
-   private String changeInPercentage;
-   private String description;
-   private String businessOverview;
-   private String stockPERatio;
-   private String dividendYield;
-   private String bookValue;
-   private String roce;
-   private String roe;
-   private String highValue;
-   private String lowValue;
-   private String marketCap;
-   private String faceValue;
+   private EquityHoldingResponse equityPurchaseData;
+   private EquityMetricsDetails equityCurrentMetrics;
 }
