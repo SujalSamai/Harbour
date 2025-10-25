@@ -1,20 +1,40 @@
 
-
 # 🛳️ Harbour - Personal Portfolio Management
 
 ## 📘 Overview
 
 **Harbour Portfolio Management** is a microservice-based investment tracking system designed to let users register, authenticate, and securely manage their investment portfolios.
 
+
+## 🔑 Key Features
+This application provides investors with a powerful tool for portfolio management, stock analysis, and risk monitoring.
+
+### 📈 Core Functionality
+- Manual Data Entry: Easily add stock holdings with details like name, average purchase price, and quantity.
+- Real-time Portfolio Analysis: Calculate and visualize overall portfolio performance, valuation, and realized gains/losses based on current market prices.
+
+### 🔍 Research & Insights
+- Symbol Lookup: Quickly retrieve detailed market data for any stock via its ticker symbol.
+- Fundamental Analysis: Analyze stock performance using key fundamental metrics and financial data.
+- Comparative Analysis: Compare multiple stocks side-by-side to support investment decisions.
+
+### 🛡️ Risk Management & Alerts
+- Allocation Reporting: View breakdowns of Sector Allocation and Market Cap Exposure.
+- Risk Scoring: Receive a quantified Portfolio Risk Score.
+- Automated Alerts: Receive notifications if a stock: 
+    - Falls > 10% (Stop-Loss).
+    - Hits a target gain level.
+
+---
+
+
+## 🧩 System Architecture
+
 Currently the system is split into three main microservices:
 
 1. **Auth Service** — Handles user registration, login, and JWT generation.
 2. **Portfolio Service** — Manages user portfolios and holdings, secured via JWT authentication.
 3. **Equity Tracker Service** - Has an endpoint which accepts a ticker symbol and gets current data for that stock by scraping data from Screener.in
-
----
-
-## 🧩 System Architecture
 
 ```
                ┌─────────────────────────-─┐
@@ -30,30 +50,30 @@ Currently the system is split into three main microservices:
                 Authorization: Bearer <JWT>
                             │
                             ▼
-┌────────────────────────────────────────────────────┐
-│                Portfolio Service                   │
-│----------------------------------------------------│
-│ /api/portfolio/** (secured endpoints)              │
-│                                                    │
-│ JWT validated by JwtTokenFilter                    │
-│ Extracts userId → @AuthenticationPrincipal Long    │
-│                                                    │
-│ Handles portfolio CRUD                             |   
-| Holdings CRUD management                           │
-└────────────────────────────────────────────────────┘
+        ┌────────────────────────────────────────────────────┐
+        │                Portfolio Service                   │
+        │----------------------------------------------------│
+        │ /api/portfolio/** (secured endpoints)              │
+        │                                                    │
+        │ JWT validated by JwtTokenFilter                    │
+        │ Extracts userId → @AuthenticationPrincipal Long    │
+        │                                                    │
+        │ Handles portfolio CRUD                             |   
+        | Holdings CRUD management                           │
+        └────────────────────────────────────────────────────┘
                             │
                             |
                             |
                             ▼
-┌────────────────────────────────────────────────────┐
-│                Stock Tracker Service               │
-│----------------------------------------------------│
-│ /api/stocks/** (unsecured endpoints)               │
-│                                                    │
-│                                                    │
-│ Expects a ticker symbol &                          |   
-| Scraps data from Web                               │
-└────────────────────────────────────────────────────┘
+        ┌────────────────────────────────────────────────────┐
+        │                Stock Tracker Service               │
+        │----------------------------------------------------│
+        │ /api/stocks/** (unsecured endpoints)               │
+        │                                                    │
+        │                                                    │
+        │ Expects a ticker symbol &                          |   
+        | Scraps data from Web                               │
+        └────────────────────────────────────────────────────┘
 
 
 ```
@@ -83,8 +103,8 @@ Currently the system is split into three main microservices:
   ```json
   {
     "token": "<jwt_token>",
-    "id": <user_id>,
-    "username": <user_name>
+    "id": "<user_id>",
+    "username": "<user_name>"
   }
   ```
 * Uses `BCryptPasswordEncoder` for password hashing.
@@ -237,7 +257,8 @@ curl --location 'http://localhost:4000/api/portfolio' \
 
 
 
+
+
 ## Estimated Flow
 
 <img width="1330" height="1190" alt="Untitled-2025-09-16-1454" src="https://github.com/user-attachments/assets/e40ca0a9-99a7-46f6-8058-b0c117def1f4" />
-
