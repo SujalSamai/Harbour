@@ -1,13 +1,11 @@
 package com.harbour.auth_service.security;
 
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
-import java.nio.charset.StandardCharsets;
 import java.security.Key;
 import java.util.Base64;
 import java.util.Date;
@@ -42,16 +40,19 @@ public class JwtTokenProvider
    public String generateToken(Authentication authentication)
    {
       // The principal is the Long userId fetched from the AuthService
-      Long userId = (Long) authentication.getPrincipal();
+
+      CustomUserDetails userDetails = (CustomUserDetails) authentication.getPrincipal();
+      Long userId = userDetails.getPrincipal();
       Date currentDate = new Date();
       Date expireDate = new Date(currentDate.getTime() + JWT_EXPIRATION);
 
-      String token = Jwts.builder().setSubject(
-                        Long.toString(userId)) // CRUCIAL: Embed the Long user ID as the token subject
-               .setIssuedAt(new Date()).setExpiration(expireDate)
-               .signWith(secretKey, SignatureAlgorithm.HS512).compact();
+      // CRUCIAL: Embed the Long user ID as the token subject
 
-      return token;
+      return Jwts.builder().subject(Long.toString(userId))
+               .issuedAt(new Date())
+               .expiration(expireDate)
+               .signWith(secretKey)
+               .compact();
    }
 }
 

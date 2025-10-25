@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
 import java.security.Key;
+import java.util.Base64;
 
 /**
  * Utility class for the Portfolio Service to validate and parse JWTs issued by the Auth Service.
@@ -16,13 +17,12 @@ import java.security.Key;
 public class JwtTokenProvider
 {
 
-   @Value("${jwt.secret}")
-   private String jwtSecret;
+   private final Key secretKey;
 
-   private Key getSigningKey()
+   public JwtTokenProvider(@Value("${jwt.secret}") String secret)
    {
-      // Use the same signing mechanism as the Auth Service (Keys.hmacShaKeyFor)
-      return Keys.hmacShaKeyFor(jwtSecret.getBytes());
+      byte[] keyBytes = Base64.getDecoder().decode(secret);
+      this.secretKey = Keys.hmacShaKeyFor(keyBytes);
    }
 
    /**
@@ -34,7 +34,7 @@ public class JwtTokenProvider
    public Long getUserIdFromJWT(String token)
    {
       Claims claims = Jwts.parser()
-               .verifyWith((SecretKey) getSigningKey())
+               .verifyWith((SecretKey) secretKey)
                .build().parseSignedClaims(token).getPayload();
 
       // The Auth Service sets the Long userId as the subject
@@ -51,14 +51,14 @@ public class JwtTokenProvider
    {
       try
       {
-         Jwts.parser().verifyWith((SecretKey) getSigningKey()).build().parseSignedClaims(authToken);
+         Jwts.parser().verifyWith((SecretKey) secretKey).build().parseSignedClaims(authToken);
+         System.out.println("Token validation successful");
          return true;
 
       }
       catch (Exception ex)
       {
-         // JWT claims string is empty
-         // Log this error
+         System.err.println("Token validation failed "+ ex);
       }
       return false;
    }

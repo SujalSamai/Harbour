@@ -2,6 +2,7 @@ package com.harbour.auth_service.controller;
 
 import com.harbour.auth_service.dto.JwtResponse;
 import com.harbour.auth_service.dto.LoginRequest;
+import com.harbour.auth_service.security.CustomUserDetails;
 import com.harbour.auth_service.security.JwtTokenProvider;
 import com.harbour.auth_service.service.AuthService;
 import jakarta.validation.Valid;
@@ -68,7 +69,8 @@ public class AuthController
       String jwt = tokenProvider.generateToken(authentication);
 
       // 4. Retrieve the authenticated principal (which is the Long userId from CustomUserDetails)
-      Long userId = (Long) authentication.getPrincipal();
+      CustomUserDetails userDetails = (CustomUserDetails) authentication.getPrincipal();
+      Long userId = userDetails.getPrincipal();
 
       // 5. Return the token and user details
       return ResponseEntity.ok(new JwtResponse(jwt, userId, request.getUsername()));

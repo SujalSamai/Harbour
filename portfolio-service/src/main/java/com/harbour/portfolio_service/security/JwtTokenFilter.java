@@ -12,6 +12,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Collections;
 
 /**
  * Custom JWT filter to process a JWT token in the Authorization header,
@@ -45,7 +46,7 @@ public class JwtTokenFilter extends OncePerRequestFilter
             // 4. Create an Authentication token for the userId
             // We use null for credentials and GrantedAuthorities because authentication is already done by the JWT
             UsernamePasswordAuthenticationToken
-                     authentication = new UsernamePasswordAuthenticationToken(userId, null, null);
+                     authentication = new UsernamePasswordAuthenticationToken(userId, null, Collections.emptyList());
 
             // 5. Add request details
             authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
