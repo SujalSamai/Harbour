@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HttpHistory">
+    <option name="httpHistories">
+      <map>
+        <entry key="0">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://localhost:4001/api/stocks" />
+              <option name="id" value="0" />
+              <option name="method" value="GET" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Nov 10 22:30:33 IST 2025&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Not Found, status=404).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2025-11-10 22:30:34" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://localhost:4001/api/stocks/CDSL" />
+              <option name="id" value="1" />
+              <option name="method" value="GET" />
+              <option name="res" value="{&quot;symbol&quot;:&quot;CDSL&quot;,&quot;companyName&quot;:&quot;Central Depository Services (India) Ltd&quot;,&quot;price&quot;:&quot;1,590&quot;,&quot;changeInPercentage&quot;:&quot;0.70&quot;,&quot;description&quot;:&quot;Central Depository Services Limited is a Market Infrastructure Institution (MII), part of the capital market structure, providing services to all market participants - exchanges, clearing corporations, depository participants (DPs), issuers and investors. It is a facilitator for holding of securities in the dematerialised form and an enabler for securities transactions. [1]&quot;,&quot;businessOverview&quot;:&quot;CDSL facilitates holding and transacting securities in electronic form and facilitates the settlement of trades executed on stock exchanges. These securities include equities, debentures, bonds, units of mutual funds, Certificates of deposit (CDs), commercial papers (CPs), Treasury Bills (TBills), and others. Other services include e-Voting, M-Voting, Myeasi Mobile App and e-Locker. [1]&quot;,&quot;stockPERatio&quot;:&quot;70.2&quot;,&quot;dividendYield&quot;:&quot;0.79&quot;,&quot;bookValue&quot;:&quot;83.4&quot;,&quot;roce&quot;:&quot;42.0&quot;,&quot;roe&quot;:&quot;32.7&quot;,&quot;highValue&quot;:&quot;1990&quot;,&quot;lowValue&quot;:&quot;1047&quot;,&quot;marketCap&quot;:&quot;33,227&quot;,&quot;faceValue&quot;:&quot;10.0&quot;}" />
+              <option name="time" value="2025-11-10 22:31:26" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://localhost:4001/api/stocks/cdsl" />
+              <option name="id" value="2" />
+              <option name="method" value="GET" />
+              <option name="res" value="{&quot;symbol&quot;:&quot;CDSL&quot;,&quot;companyName&quot;:&quot;Central Depository Services (India) Ltd&quot;,&quot;price&quot;:&quot;1,590&quot;,&quot;changeInPercentage&quot;:&quot;0.70&quot;,&quot;description&quot;:&quot;Central Depository Services Limited is a Market Infrastructure Institution (MII), part of the capital market structure, providing services to all market participants - exchanges, clearing corporations, depository participants (DPs), issuers and investors. It is a facilitator for holding of securities in the dematerialised form and an enabler for securities transactions. [1]&quot;,&quot;businessOverview&quot;:&quot;CDSL facilitates holding and transacting securities in electronic form and facilitates the settlement of trades executed on stock exchanges. These securities include equities, debentures, bonds, units of mutual funds, Certificates of deposit (CDs), commercial papers (CPs), Treasury Bills (TBills), and others. Other services include e-Voting, M-Voting, Myeasi Mobile App and e-Locker. [1]&quot;,&quot;stockPERatio&quot;:&quot;70.2&quot;,&quot;dividendYield&quot;:&quot;0.79&quot;,&quot;bookValue&quot;:&quot;83.4&quot;,&quot;roce&quot;:&quot;42.0&quot;,&quot;roe&quot;:&quot;32.7&quot;,&quot;highValue&quot;:&quot;1990&quot;,&quot;lowValue&quot;:&quot;1047&quot;,&quot;marketCap&quot;:&quot;33,227&quot;,&quot;faceValue&quot;:&quot;10.0&quot;}" />
+              <option name="time" value="2025-11-10 22:31:35" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <ReqHistory>
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="host" value="http://localhost:4002/h2-console" />
+              <option name="id" value="3" />
+              <option name="method" value="GET" />
+              <option name="res" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;&#10;&lt;!--&#10;Copyright 2004-2024 H2 Group. Multiple-Licensed under the MPL 2.0,&#10;and the EPL 1.0 (https://h2database.com/html/license.html).&#10;Initial Developer: H2 Group&#10;--&gt;&#10;&lt;html&gt;&lt;head&gt;&#10;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;&#10;    &lt;title&gt;H2 Console&lt;/title&gt;&#10;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheet.css&quot; /&gt;&#10;&lt;script type=&quot;text/javascript&quot;&gt;&#10;location.href = 'login.jsp?jsessionid=c2679f7f1fc169cd3e1e8d58265f4f8d';&#10;&lt;/script&gt;&#10;&lt;/head&gt;&#10;&lt;body style=&quot;margin: 20px;&quot;&gt;&#10;&#10;&lt;h1&gt;Welcome to H2&lt;/h1&gt;&#10;&lt;h2&gt;No Javascript&lt;/h2&gt;&#10;If you are not automatically redirected to the login page, then&#10;Javascript is currently disabled or your browser does not support Javascript.&#10;For this application to work, Javascript is essential.&#10;Please enable Javascript now, or use another web browser that supports it.&#10;&#10;&lt;/body&gt;&lt;/html&gt;&#10;" />
+              <option name="time" value="2025-11-10 22:50:22" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="4">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;madhavi&quot;,&#10;  &quot;password&quot;: &quot;sujal&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="4" />
+              <option name="method" value="POST" />
+              <option name="res" value="could not execute statement [Unique index or primary key violation: &quot;PRIMARY KEY ON PUBLIC.USERS(ID) ( /* key:1 */ CAST(1 AS BIGINT), 'madhavi', 'sujal')&quot;; SQL statement:&#10;insert into users (password,username,id) values (?,?,default) [23505-232]] [insert into users (password,username,id) values (?,?,default)]; SQL [insert into users (password,username,id) values (?,?,default)]; constraint [PRIMARY KEY]" />
+              <option name="time" value="2025-11-10 23:25:21" />
+              <option name="uri" value="/api/auth/register" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="5">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;nancy&quot;,&#10;  &quot;password&quot;: &quot;gupta&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="5" />
+              <option name="method" value="POST" />
+              <option name="res" value="User registered successfully" />
+              <option name="time" value="2025-11-10 23:28:09" />
+              <option name="uri" value="/api/auth/register" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="6">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;madhavi&quot;,&#10;  &quot;password&quot;: &quot;sujal&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="6" />
+              <option name="method" value="POST" />
+              <option name="res" value="User registered successfully" />
+              <option name="time" value="2025-11-10 23:30:14" />
+              <option name="uri" value="/api/auth/register" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="7">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;madhavi&quot;,&#10;  &quot;password&quot;: &quot;sujal&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="7" />
+              <option name="method" value="POST" />
+              <option name="res" value="Username already taken." />
+              <option name="time" value="2025-11-10 23:31:09" />
+              <option name="uri" value="/api/auth/register" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="8">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;madhavi&quot;,&#10;  &quot;password&quot;: &quot;sujal&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="8" />
+              <option name="method" value="POST" />
+              <option name="res" value="User registered successfully" />
+              <option name="time" value="2025-11-10 23:31:54" />
+              <option name="uri" value="/api/auth/register" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="9">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;madhavi&quot;,&#10;  &quot;password&quot;: &quot;sujal&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="9" />
+              <option name="method" value="POST" />
+              <option name="res" value="{&quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNzYyNzk3Nzc1LCJleHAiOjE3NjI4MDEzNzV9.yqiMmJd8V6WQka0HmLjKo5JLg3_iDBUn9woi4vJaF33coCl3K_3_ATULhPZxA1ZEN1-L71g82HQYBdI3F5LdGw&quot;,&quot;type&quot;:&quot;Bearer&quot;,&quot;id&quot;:4,&quot;username&quot;:&quot;madhavi&quot;}" />
+              <option name="time" value="2025-11-10 23:32:55" />
+              <option name="uri" value="/api/auth/login" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="10">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;stockSymbol&quot;: &quot;CDSL&quot;,&#10;    &quot;quantity&quot;: 1000,&#10;    &quot;averagePrice&quot;: 1000,&#10;    &quot;purchaseDate&quot;: &quot;2025-11-10&quot;&#10;}&amp;portfolioId=0&amp;userId=0" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="10" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="portfolioId" value="0" />
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-10 23:41:30" />
+              <option name="uri" value="/api/portfolio/{portfolioId}/holdings" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="11">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;stockSymbol&quot;: &quot;CDSL&quot;,&#10;    &quot;quantity&quot;: 1000,&#10;    &quot;averagePrice&quot;: 1000,&#10;    &quot;purchaseDate&quot;: &quot;2025-11-10&quot;&#10;}&amp;portfolioId=0&amp;userId=0" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNzYyNzk3Nzc1LCJleHAiOjE3NjI4MDEzNzV9.yqiMmJd8V6WQka0HmLjKo5JLg3_iDBUn9woi4vJaF33coCl3K_3_ATULhPZxA1ZEN1-L71g82HQYBdI3F5LdGw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="11" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="portfolioId" value="0" />
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-10 23:43:27" />
+              <option name="uri" value="/api/portfolio/{portfolioId}/holdings" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="12">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;username&quot;: &quot;madhavi&quot;,&#10;  &quot;password&quot;: &quot;sujal&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="12" />
+              <option name="method" value="POST" />
+              <option name="res" value="{&quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNzYyNzk4NDMyLCJleHAiOjE3NjI4MDIwMzJ9.HcKrzg68C7dY_kgka0NX4l-nxn-L7NircZn8JdC5XffYtNK_qQMUHKkeG6o9Vha4K1ycSSQ-P6lAj7SevPA9zw&quot;,&quot;type&quot;:&quot;Bearer&quot;,&quot;id&quot;:4,&quot;username&quot;:&quot;madhavi&quot;}" />
+              <option name="time" value="2025-11-10 23:43:53" />
+              <option name="uri" value="/api/auth/login" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="13">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;    &quot;stockSymbol&quot;: &quot;CDSL&quot;,&#10;    &quot;quantity&quot;: 10,&#10;    &quot;averagePrice&quot;: 100,&#10;    &quot;purchaseDate&quot;: &quot;2025-11-10&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNzYyNzk4NDMyLCJleHAiOjE3NjI4MDIwMzJ9.HcKrzg68C7dY_kgka0NX4l-nxn-L7NircZn8JdC5XffYtNK_qQMUHKkeG6o9Vha4K1ycSSQ-P6lAj7SevPA9zw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="13" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="portfolioId" value="0" />
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-10 23:45:35" />
+              <option name="uri" value="/api/portfolio/{portfolioId}/holdings" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="14">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNzYyNzk4NDMyLCJleHAiOjE3NjI4MDIwMzJ9.HcKrzg68C7dY_kgka0NX4l-nxn-L7NircZn8JdC5XffYtNK_qQMUHKkeG6o9Vha4K1ycSSQ-P6lAj7SevPA9zw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="14" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-10 23:46:55" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="15">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNzYyNzk4NDMyLCJleHAiOjE3NjI4MDIwMzJ9.HcKrzg68C7dY_kgka0NX4l-nxn-L7NircZn8JdC5XffYtNK_qQMUHKkeG6o9Vha4K1ycSSQ-P6lAj7SevPA9zw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="15" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-10 23:48:21" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="16">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNzYyNzk4NDMyLCJleHAiOjE3NjI4MDIwMzJ9.HcKrzg68C7dY_kgka0NX4l-nxn-L7NircZn8JdC5XffYtNK_qQMUHKkeG6o9Vha4K1ycSSQ-P6lAj7SevPA9zw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="16" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-10 23:49:37" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="17">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}&amp;userId=0" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYyOTczOTg3LCJleHAiOjE3NjI5Nzc1ODd9.lj_qBcDYwdrdO_PDITZaTPTwxOk71llp4E6z5jVXDMghNQyHNVLeCXhXcXG0BkTYNYlFiXPFF6nIKEVxephZlA" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="17" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-13 00:31:50" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="18">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}&amp;userId=1" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYyOTczOTg3LCJleHAiOjE3NjI5Nzc1ODd9.lj_qBcDYwdrdO_PDITZaTPTwxOk71llp4E6z5jVXDMghNQyHNVLeCXhXcXG0BkTYNYlFiXPFF6nIKEVxephZlA" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="18" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-13 00:32:09" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="19">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYyOTczOTg3LCJleHAiOjE3NjI5Nzc1ODd9.lj_qBcDYwdrdO_PDITZaTPTwxOk71llp4E6z5jVXDMghNQyHNVLeCXhXcXG0BkTYNYlFiXPFF6nIKEVxephZlA" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="19" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-13 00:32:18" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="20">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;  &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYzNDAxNjQ2LCJleHAiOjE3NjM0MDUyNDZ9.JD2UMMwAzM89g0bn0J_iNhrZALsxXQ163Yk9NF9SemJEeuiGqO4qZhyiLZAhag8csNu3PZFasOX1Yuou9eftpw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="20" />
+              <option name="method" value="PUT" />
+              <option name="params">
+                <map>
+                  <entry key="id" value="0" />
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-17 23:19:38" />
+              <option name="uri" value="/api/portfolio/{id}" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="21">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}&amp;userId=0" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYzNDAxNjQ2LCJleHAiOjE3NjM0MDUyNDZ9.JD2UMMwAzM89g0bn0J_iNhrZALsxXQ163Yk9NF9SemJEeuiGqO4qZhyiLZAhag8csNu3PZFasOX1Yuou9eftpw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="21" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="0" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-17 23:20:15" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="22">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}&amp;userId=1" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYzNDAxNjQ2LCJleHAiOjE3NjM0MDUyNDZ9.JD2UMMwAzM89g0bn0J_iNhrZALsxXQ163Yk9NF9SemJEeuiGqO4qZhyiLZAhag8csNu3PZFasOX1Yuou9eftpw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="22" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-17 23:20:28" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="23">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}&amp;userId=1" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYzNDAxNjQ2LCJleHAiOjE3NjM0MDUyNDZ9.JD2UMMwAzM89g0bn0J_iNhrZALsxXQ163Yk9NF9SemJEeuiGqO4qZhyiLZAhag8csNu3PZFasOX1Yuou9eftpw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4002" />
+              <option name="id" value="23" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-17 23:20:28" />
+              <option name="uri" value="/api/portfolio" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="24">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}&amp;userId=1" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNzYzNDAxNjQ2LCJleHAiOjE3NjM0MDUyNDZ9.JD2UMMwAzM89g0bn0J_iNhrZALsxXQ163Yk9NF9SemJEeuiGqO4qZhyiLZAhag8csNu3PZFasOX1Yuou9eftpw" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4000/api/portfolio" />
+              <option name="id" value="24" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map>
+                  <entry key="userId" value="1" />
+                </map>
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-17 23:52:09" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="25">
+          <value>
+            <ReqHistory>
+              <option name="body" value="request={&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}&amp;userId=1" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwiaWF0IjoxNzYzNDAzNjA4LCJleHAiOjE3NjM0MDcyMDh9.ErjVZmg6OW1A4aZ13aYCwwisRrHoOEQcSYMC7Cp0wvWTCA0EgFZLgqP7LF1slw9caEA-tTFDNj_eeP9V4twpQQ" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4000/api/portfolio" />
+              <option name="id" value="25" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-17 23:52:30" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+        <entry key="26">
+          <value>
+            <ReqHistory>
+              <option name="body" value="{&#10;    &quot;portfolioName&quot;: &quot;test-portfolio&quot;&#10;}" />
+              <option name="contentType" value="application/json" />
+              <option name="fileNames">
+                <array />
+              </option>
+              <option name="headers">
+                <map>
+                  <entry key="Authorization" value="Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwiaWF0IjoxNzYzNDAzNjA4LCJleHAiOjE3NjM0MDcyMDh9.ErjVZmg6OW1A4aZ13aYCwwisRrHoOEQcSYMC7Cp0wvWTCA0EgFZLgqP7LF1slw9caEA-tTFDNj_eeP9V4twpQQ" />
+                  <entry key="Content-Type" value="application/json" />
+                </map>
+              </option>
+              <option name="host" value="http://127.0.0.1:4000/api/portfolio" />
+              <option name="id" value="26" />
+              <option name="method" value="POST" />
+              <option name="params">
+                <map />
+              </option>
+              <option name="res" value="Error request, response status: 403" />
+              <option name="time" value="2025-11-17 23:52:46" />
+              <option name="uri" value="" />
+            </ReqHistory>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

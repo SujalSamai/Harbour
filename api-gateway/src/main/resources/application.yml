@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: api-gateway
+
+  main:
+    web-application-type: reactive
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+
+            # -------------------------
+            # AUTH SERVICE ROUTE
+            # -------------------------
+            - id: auth-service
+              uri: http://127.0.0.1:4002
+              predicates:
+                - Path=/api/auth/**
+              filters:
+                - StripPrefix=2
+
+            # -------------------------
+            # EQUITY TRACKER SERVICE ROUTE
+            # -------------------------
+            - id: equity-tracker-service
+              uri: http://127.0.0.1:4001
+              predicates:
+                - Path=/api/stocks/**
+              filters:
+                - StripPrefix=2
+
+            # -------------------------
+            # PORTFOLIO SERVICE ROUTE
+            # -------------------------
+            - id: portfolio-service
+              uri: http://127.0.0.1:4000
+              predicates:
+                - Path=/api/portfolio/**
+              filters:
+                - StripPrefix=2
+
+server:
+  port: 4003
