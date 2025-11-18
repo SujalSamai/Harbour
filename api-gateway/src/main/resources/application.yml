@@ -15,7 +15,7 @@ spring:
             # AUTH SERVICE ROUTE
             # -------------------------
             - id: auth-service-route
-              uri: http://localhost:4002
+              uri: ${AUTH_SERVICE_URI:http://localhost:4002}
               predicates:
                 - Path=/api/auth/**
 
@@ -23,7 +23,7 @@ spring:
             # EQUITY TRACKER SERVICE ROUTE
             # -------------------------
             - id: equity-tracker-service-route
-              uri: http://localhost:4001
+              uri: ${EQUITY_TRACKER_SERVICE_URI:http://localhost:4001}
               predicates:
                 - Path=/api/stocks/**
 
@@ -31,9 +31,9 @@ spring:
             # PORTFOLIO SERVICE ROUTE
             # -------------------------
             - id: portfolio-service-route
-              uri: http://localhost:4000
+              uri: ${PORTFOLIO_SERVICE_URI:http://localhost:4000}
               predicates:
                 - Path=/api/portfolio/**
 
 server:
-  port: 4003
+  port: ${GATEWAY_PORT:4003}
